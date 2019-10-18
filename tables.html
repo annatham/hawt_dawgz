@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Hot Dawgz</title>
+<!--Bootstrap-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Place your kit's code here -->
+<script src="https://kit.fontawesome.com/2a0eee549d.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center"><i class="fas fa-fire"></i> Hot Dawgz Restaurant <i class="fas fa-fire"></i></h1>
+            <hr>
+            <h2 class="text-center">Available Tables!</h2>
+      <br>
+            <div class="text-center">
+        <a href="./home.html"><button type="button" class="btn btn-lg btn-light"><i class="fas fa-home"></i></button></a>
+      </div>
+        </div>
+        <div class="row">
+        <div class="col-lg-12">
+        <!-- Current Reservation List-->
+        <div class="card">
+              <div class="card-header">
+                <h3><strong>Current Reservations</strong></h3>
+              </div>
+              <div class="card-body">
+              <ul id="tableList" class="list-group"></ul>
+                </div>
+              </div>
+          <!-- Waiting List Card-->
+          <div class="mt-4">
+              <div class="card-header">
+                  <h3><strong>Waiting List</strong></h3>
+              </div>
+              <div class="card-body">
+                  <ul id="waitList" class="list-group"></ul>
+              </div>
+          </div>
+
+          <a href="./reserve.html"><button type="button" class="btn btn-lg btn-danger"><i class="far fa-list-alt"></i>Make Reservation</button></a>
+
+      </div>
+  </div>
+    <footer class="footer-center">
+      <div class="container">
+            <p><a href="#" id=clear>Clear Table</a> | <a href="api/tables">API Table Link</a> | <a href="api/waitList">API Wait List</a></p>
+      </div>
+    </footer>
+    </div>
+    </body>
+</html>
